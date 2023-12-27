@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h2>Let's Play Snake Water Gun</h2>
+    <div class="choices">
+      <div class="choice" id="snake">
+        <img src="img/snake.jpg" alt="snake" />
+      </div>
+      <div class="choice" id="water">
+        <img src="img/waters.png" alt="water" />
+      </div>
+      <div class="choice" id="gun">
+        <img src="img/gun.png" alt="gun" />
+      </div>
+    </div>
+    <!-- SCORES -->
+    <div class="score-board">
+      <div class="score">
+        <p id="user">0</p>
+        <p>Your Score</p>
+      </div>
+      <div class="score">
+        <p id="comp">0</p>
+        <p>Computer Score</p>
+      </div>
+    </div>
+    <!-- For Message -->
+    <div class="message">
+      <p id="msg">Play your move</p>
+    </div>
+
+    <!-- Rule of the Game -->
+    <button id="showRulesBtn">Show Rules</button>
+    <div class="Rules" id="rulesContainer">
+      <h5>First click on one icon</h5>
+      <p id="ruleText">Rules are here:</p>
+      <ul>
+        <li>Snake kills Water</li>
+        <li>Water kills Gun</li>
+        <li>Gun kills Snake</li>
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
